@@ -5,23 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Web Của Tôi</title>
     <style>
+        /* Body toàn trang */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #000; /* Màu nền đen */
+            color: #fff; /* Màu chữ trắng */
+            margin: 0;
+            height: 100vh; /* Chiều cao 100% viewport */
+            display: flex;
+            justify-content: center; /* Canh giữa ngang */
+            align-items: center;    /* Canh giữa dọc */
+        }
+
+        /* Khung nội dung */
+        .container {
             text-align: center;
-            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.1); /* Khung hơi mờ */
+            padding: 40px;
+            border-radius: 10px;
         }
+
         h1 {
-            color: #333;
+            color: #fff;
         }
+
         p {
             font-size: 18px;
-            color: #555;
+            color: #ddd;
         }
+
         img {
             max-width: 300px;
             margin: 20px 0;
+            border-radius: 5px;
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -31,6 +49,7 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #45a049;
         }
@@ -38,11 +57,13 @@
 </head>
 <body>
 
-    <h1>Chào mừng đến với trang web của tôi!</h1>
-    <p>Đây là nội dung mà bạn muốn hiển thị trên trang web.</p>
-    <img src="https://via.placeholder.com/300" alt="Hình minh họa">
-    <br>
-    <button onclick="alert('Bạn đã bấm nút!')">Nhấn vào tôi</button>
+    <div class="container">
+        <h1>Chào mừng đến với trang web của tôi!</h1>
+        <p>Đây là nội dung mà bạn muốn hiển thị trên trang web.</p>
+        <img src="https://via.placeholder.com/300" alt="Hình minh họa">
+        <br>
+        <button onclick="alert('Bạn đã bấm nút!')">Nhấn vào tôi</button>
+    </div>
 
 </body>
 </html>
